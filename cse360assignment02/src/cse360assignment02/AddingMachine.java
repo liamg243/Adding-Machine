@@ -14,27 +14,27 @@ public class AddingMachine {
 	}
 	
 	public int getTotal() {
-		return total;
+		return total; //return total to be printed
 	}
 	
 	public void add (int value) {
-		total = total + value;
-		totalChar = totalChar + " + ";
-		totalChar = totalChar + value;
+		total = total + value; //add value to total
+		totalChar = totalChar + " + "; //add "+" to totalChar output string
+		totalChar = totalChar + value; //add value to totalChar output string
 	}
 	
 	public void subtract (int value) {
-		total = total - value;
-		totalChar = totalChar + " - ";
-		totalChar = totalChar + value;
+		total = total - value; //subtract value from total
+		totalChar = totalChar + " - "; //add "-" to totalChar output string
+		totalChar = totalChar + value; //add value to totalChar output string
 	}
 	
 	public String toString() {
-		return totalChar;
+		return totalChar; //return totalChar string to be printed
 	}
 	
 	public void clear() {
-		total = 0;
-		totalChar = "0";
+		total = 0; //reset total
+		totalChar = "0"; //reset totalChar string
 	}
 }
